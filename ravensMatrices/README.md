@@ -4,6 +4,6 @@ Task is build in Psychopy builder
 
 Required files:
 
-trials.csv
-.psyexp 
-choices / stiumli folders
+- trials.csv <br />
+- .psyexp <br />
+- choices / stiumli folders<n>
