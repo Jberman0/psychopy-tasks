@@ -1,0 +1,10 @@
+﻿stimulus,choices,correct,,,
+stimuli/b10.png,"choices/b10_1.png,choices/b10_2.png,choices/b10_3.png,choices/b10_4.png,choices/b10_5.png,choices/b10_6.png",2,,10,a10
+stimuli/b16.png,"choices/b16_1.png,choices/b16_2.png,choices/b16_3.png,choices/b16_4.png,choices/b16_5.png,choices/b16_6.png",1,,16,b4
+stimuli/b21.png,"choices/b21_1.png,choices/b21_2.png,choices/b21_3.png,choices/b21_4.png,choices/b21_5.png,choices/b21_6.png",3,,21,b9
+stimuli/b30.png,"choices/b30_1.png,choices/b30_2.png,choices/b30_3.png,choices/b30_4.png,choices/b30_5.png,choices/b30_6.png,choices/b30_7.png,choices/b30_8.png",3,,30,c6
+stimuli/b34.png,"choices/b34_1.png,choices/b34_2.png,choices/b34_3.png,choices/b34_4.png,choices/b34_5.png,choices/b34_6.png,choices/b34_7.png,choices/b34_8.png",5,,34,c10
+stimuli/b44.png,"choices/b44_1.png,choices/b44_2.png,choices/b44_3.png,choices/b44_4.png,choices/b44_5.png,choices/b44_6.png,choices/b44_7.png,choices/b44_8.png",3,,44,d8
+stimuli/b50.png,"choices/b50_1.png,choices/b50_2.png,choices/b50_3.png,choices/b50_4.png,choices/b50_5.png,choices/b50_6.png,choices/b50_7.png,choices/b50_8.png",5,,50,e2
+stimuli/b52.png,"choices/b52_1.png,choices/b52_2.png,choices/b52_3.png,choices/b52_4.png,choices/b52_5.png,choices/b52_6.png,choices/b52_7.png,choices/b52_8.png",1,,52,e4
+stimuli/b57.png,"choices/b57_1.png,choices/b57_2.png,choices/b57_3.png,choices/b57_4.png,choices/b57_5.png,choices/b57_6.png,choices/b57_7.png,choices/b57_8.png",0,,57,e9

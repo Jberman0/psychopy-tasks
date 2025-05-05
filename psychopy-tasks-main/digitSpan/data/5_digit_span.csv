@@ -1,0 +1,6 @@
+pOrder,rt_1,rt_2,trial_type,trial_num,digits,response,accuracy,rt,digit_count,max_digit,max_before_error
+5,1.0609662532806396,0.5635190010070801,instruction,,,,,,,3,0
+5,,,practice,1,7 3 0,5 6 9,0,1.1246602535247803,3,,
+5,,,practice,2,3 5 6,8 5 6,0,1.080845832824707,3,,
+5,,,practice,3,7 8 3,7 8 3,1,1.239694595336914,3,,
+5,,,task,1,5 8 9,5 8 9,1,1.1477484703063965,3,,
