@@ -1,0 +1,43 @@
+10.6668 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E12B16D128>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001E12B1F8588>, multiSample=False, name='window1', numSamples=2, pos=[320.0, 180.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.6669 	EXP 	window1: mouseVisible = True
+10.6670 	EXP 	window1: recordFrameIntervals = False
+10.7265 	EXP 	window1: recordFrameIntervals = True
+10.7948 	EXP 	window1: recordFrameIntervals = False
+11.9277 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1.5)
+11.9446 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0.  , 0.38]), rgb=UNKNOWN, text='Please select an integer betwen 11 and 20', units='height', win=Window(...), wrapWidth=1)
+11.9567 	EXP 	window1: mouseVisible = True
+12.0146 	EXP 	Created slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Open Sans', granularity=1.0, labelHeight=0.05, labelWrapWidth=None, labels=(11, 12, 13, 14, 15, 16, 17, 18, 19, 20), name='slider', opacity=None, pos=(0, 0.05), readOnly=False, self=UNKNOWN, size=(1.3, 0.15), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]), units='height', win=Window(...))
+12.0369 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([ 0.  , -0.38]), rgb=UNKNOWN, text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+12.0539 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.2160 	EXP 	slider: autoLog = True
+12.2160 	EXP 	slider: markerPos = None
+12.2160 	EXP 	slider: rating = None
+12.2160 	EXP 	slider: markerPos = None
+12.2160 	EXP 	slider: contrast = 1.0
+12.2160 	EXP 	slider: autoLog = True
+12.2160 	EXP 	slider: styleTweaks = []
+12.2160 	EXP 	slider: style = 'rating'
+12.2160 	EXP 	slider: styleTweaks = []
+12.2160 	EXP 	text: autoDraw = True
+12.3344 	DATA 	Keypress: space
+12.3594 	EXP 	text: autoDraw = False
+12.3594 	EXP 	slider: markerPos = None
+12.3594 	EXP 	slider: markerPos = None
+12.3594 	EXP 	slider: rating = None
+12.3594 	EXP 	text_2: autoDraw = True
+12.3594 	EXP 	slider: autoDraw = True
+12.3594 	EXP 	text_3: autoDraw = True
+12.8476 	DATA 	Mouse: Left button down, pos=(1057,577)
+12.8776 	EXP 	slider: markerPos = 16.12179485192666
+12.9019 	EXP 	slider: markerPos = 16.12179485192666
+12.9263 	EXP 	slider: markerPos = 16.12179485192666
+12.9294 	DATA 	Mouse:  Left button up, pos=(1057,577)
+12.9508 	EXP 	slider: markerPos = 16.0
+12.9508 	EXP 	slider: rating = 16.0
+13.1043 	DATA 	Keypress: space
+13.1153 	EXP 	text_2: autoDraw = False
+13.1153 	EXP 	slider: autoDraw = False
+13.1153 	EXP 	text_3: autoDraw = False
+13.1153 	EXP 	text_4: autoDraw = True
+15.6151 	EXP 	text_4: autoDraw = False
+15.6707 	EXP 	window1: mouseVisible = True
