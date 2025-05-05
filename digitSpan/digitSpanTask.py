@@ -3,13 +3,13 @@ import random, csv, time, os
 
 # Participant info dialog
 info = gui.Dlg(title="Digit Span Task")
-info.addField("Participant ID:")
+info.addField("pOrder")
 info.show()
 
 if not info.OK:  # User clicked cancel
     core.quit()
     
-participant_id = info.data[0]  # Get participant ID
+pOrder = info.data[0]  # Get participant ID
 
 # Initialize window (now uses full screen dimensions)
 win = visual.Window(fullscr = True, color='black', units='pix')
@@ -43,7 +43,7 @@ params = {
 
 # Data structure
 data_dict = {
-    "participant": participant_id,
+    "pOrder": pOrder,
     "instruction": {"rt_1": None, "rt_2": None},
     "practice": {"trials": []},
     "task": {"trials": []},
@@ -306,15 +306,15 @@ data_folder = 'data'
 if not os.path.exists(data_folder):
     os.makedirs(data_folder)
 
-filename = os.path.join(data_folder, f'{participant_id}_digit_span.csv')
-fieldnames = ['participant', 'rt_1', 'rt_2', 'trial_type', 'trial_num', 'digits', 'response', 'accuracy', 'rt', 'digit_count', 'max_digit', 'max_before_error']
+filename = os.path.join(data_folder, f'{pOrder}_digit_span.csv')
+fieldnames = ['pOrder', 'rt_1', 'rt_2', 'trial_type', 'trial_num', 'digits', 'response', 'accuracy', 'rt', 'digit_count', 'max_digit', 'max_before_error']
 
 # Create a list to hold all flattened data rows
 all_rows = []
 
 # Add instruction times as first row with metadata
 instruction_row = {
-    'participant': participant_id,
+    'pOrder': pOrder,
     'rt_1': data_dict["instruction"]["rt_1"],
     'rt_2': data_dict["instruction"]["rt_2"],
     'trial_type': 'instruction',
@@ -332,7 +332,7 @@ all_rows.append(instruction_row)
 # Add practice trials
 for trial in data_dict["practice"]["trials"]:
     trial_row = {
-        'participant': participant_id,
+        'pOrder': pOrder,
         'rt_1': '',
         'rt_2': '',
         'trial_type': 'practice',
@@ -350,7 +350,7 @@ for trial in data_dict["practice"]["trials"]:
 # Add task trials
 for trial in data_dict["task"]["trials"]:
     trial_row = {
-        'participant': participant_id,
+        'pOrder': pOrder,
         'rt_1': '',
         'rt_2': '',
         'trial_type': 'task',
