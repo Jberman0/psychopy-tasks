@@ -1,0 +1,512 @@
+8.8579 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000024FC48EA518>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000024FC493B978>, multiSample=False, name='window1', numSamples=2, pos=[320.0, 180.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.8581 	EXP 	window1: mouseVisible = True
+8.8582 	EXP 	window1: recordFrameIntervals = False
+8.9184 	EXP 	window1: recordFrameIntervals = True
+8.9857 	EXP 	window1: recordFrameIntervals = False
+10.0547 	EXP 	Created IntroText_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='IntroText_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.0918 	EXP 	Created IntroText_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='IntroText_2', opacity=1, ori=0.0, pos=array([0.  , 0.27]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1.5)
+10.1068 	EXP 	window1: mouseVisible = True
+10.1205 	EXP 	Created slider_1 = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Open Sans', granularity=0.5, labelHeight=0.05, labelWrapWidth=None, labels=None, name='slider_1', opacity=None, pos=(0, -0.16), readOnly=True, self=UNKNOWN, size=(1.0, 0.15), startValue=5, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+10.1334 	EXP 	Created IntroText_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='IntroText_3', opacity=1, ori=0.0, pos=array([ 0.  , -0.43]), rgb=UNKNOWN, text='Press SPACE to begin', units='height', win=Window(...), wrapWidth=1)
+10.2732 	EXP 	Created YouReceiveText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-22.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='YouReceiveText', opacity=1, ori=0.0, pos=array([-0.72, -0.03]), rgb=UNKNOWN, text='You receive', units='height', win=Window(...), wrapWidth=1)
+10.2789 	EXP 	Created OtherReceiveText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-23.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='OtherReceiveText', opacity=1, ori=0.0, pos=array([-0.72, -0.29]), rgb=UNKNOWN, text='Other receives', units='height', win=Window(...), wrapWidth=1)
+10.2873 	EXP 	Created YouDistribution = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-24.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='YouDistribution', opacity=1, ori=0.0, pos=array([ 0.65, -0.03]), rgb=UNKNOWN, text='You', units='height', win=Window(...), wrapWidth=1)
+10.3016 	EXP 	Created OtherDistribution = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-25.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='OtherDistribution', opacity=1, ori=0.0, pos=array([ 0.65, -0.29]), rgb=UNKNOWN, text='Other', units='height', win=Window(...), wrapWidth=1)
+10.3043 	EXP 	Created TaskOutline = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-26.0, fillColor=array([0.00392157, 0.00392157, 0.00392157]), fillColorSpace='rgb', fillRGB=array([0.00392157, 0.00392157, 0.00392157]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=4.0, name='TaskOutline', opacity=0.2, ori=0.0, pos=array([-0.15, -0.17]), size=array([1.45, 0.4 ]), units='height', vertices=ndarray(...), win=Window(...))
+10.3152 	EXP 	Created You_Amount_Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-27.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='You_Amount_Text', opacity=1, ori=0.0, pos=array([ 0.75, -0.03]), rgb=UNKNOWN, text='50', units='height', win=Window(...), wrapWidth=1)
+10.3215 	EXP 	Created Other_Amount_Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-28.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='Other_Amount_Text', opacity=1, ori=0.0, pos=array([ 0.75, -0.29]), rgb=UNKNOWN, text='40', units='height', win=Window(...), wrapWidth=1)
+10.3342 	EXP 	window1: mouseVisible = True
+10.3494 	EXP 	Created slider_2 = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=0, fillColor=None, flip=False, font='Open Sans', granularity=0.5, labelHeight=0.05, labelWrapWidth=None, labels=None, name='slider_2', opacity=None, pos=(0, 0), readOnly=False, self=UNKNOWN, size=(1.0, 0.15), startValue=5, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+10.4248 	EXP 	Created TrialOutline = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-20.0, fillColor=array([0.00392157, 0.00392157, 0.00392157]), fillColorSpace='rgb', fillRGB=array([0.00392157, 0.00392157, 0.00392157]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=4.0, name='TrialOutline', opacity=0.2, ori=0.0, pos=array([-0.15, -0.01]), size=array([1.45, 0.4 ]), units='height', vertices=ndarray(...), win=Window(...))
+10.4365 	EXP 	Created YouReceiveTextTrial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-21.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='YouReceiveTextTrial', opacity=1, ori=0.0, pos=array([-0.72,  0.13]), rgb=UNKNOWN, text='You receive', units='height', win=Window(...), wrapWidth=1)
+10.4470 	EXP 	Created OtherReceiveTextTrial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-22.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='OtherReceiveTextTrial', opacity=1, ori=0.0, pos=array([-0.72, -0.13]), rgb=UNKNOWN, text='Other receives', units='height', win=Window(...), wrapWidth=1)
+10.4564 	EXP 	Created YouAmountTextTrial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-23.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='YouAmountTextTrial', opacity=1, ori=0.0, pos=array([0.78, 0.13]), rgb=UNKNOWN, text='50', units='height', win=Window(...), wrapWidth=1)
+10.4635 	EXP 	Created OtherAmountTextTrial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-24.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='OtherAmountTextTrial', opacity=1, ori=0.0, pos=array([ 0.78, -0.13]), rgb=UNKNOWN, text='40', units='height', win=Window(...), wrapWidth=1)
+10.4718 	EXP 	Created YouDistributionTrial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-26.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='YouDistributionTrial', opacity=1, ori=0.0, pos=array([0.65, 0.13]), rgb=UNKNOWN, text='You', units='height', win=Window(...), wrapWidth=1)
+10.4791 	EXP 	Created OtherDistributionTrial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-27.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='OtherDistributionTrial', opacity=1, ori=0.0, pos=array([ 0.65, -0.13]), rgb=UNKNOWN, text='Other', units='height', win=Window(...), wrapWidth=1)
+10.4932 	EXP 	Created space_trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-28.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='space_trial_text', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text='Please select a distribution', units='height', win=Window(...), wrapWidth=1)
+10.5058 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-29.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([ 0.  , -0.41]), rgb=UNKNOWN, text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+10.5190 	EXP 	Created end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='end_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.6973 	EXP 	slider_1: autoLog = True
+10.6973 	EXP 	slider_1: markerPos = 5.0
+10.6973 	EXP 	slider_1: rating = 5
+10.6973 	EXP 	slider_1: markerPos = 5
+10.6973 	EXP 	slider_1: contrast = 1.0
+10.6973 	EXP 	slider_1: autoLog = True
+10.6973 	EXP 	slider_1: styleTweaks = []
+10.6973 	EXP 	slider_1: style = 'rating'
+10.6973 	EXP 	slider_1: styleTweaks = []
+10.6973 	EXP 	slider_2: autoLog = True
+10.6973 	EXP 	slider_2: markerPos = 5.0
+10.6973 	EXP 	slider_2: rating = 5
+10.6973 	EXP 	slider_2: markerPos = 5
+10.6973 	EXP 	slider_2: contrast = 1.0
+10.6973 	EXP 	slider_2: autoLog = True
+10.6973 	EXP 	slider_2: styleTweaks = []
+10.6973 	EXP 	slider_2: style = 'rating'
+10.6973 	EXP 	slider_2: styleTweaks = []
+10.6973 	EXP 	IntroText_1: autoDraw = True
+12.7283 	DATA 	Mouse: Left button down, pos=(929,572)
+12.7829 	DATA 	Mouse:  Left button up, pos=(929,572)
+14.6116 	DATA 	Keypress: space
+14.6305 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.6342 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.6375 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.6414 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.6446 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.6489 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.6530 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.6567 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+14.7505 	EXP 	IntroText_1: autoDraw = False
+14.7505 	EXP 	slider_1: markerPos = 5
+14.7505 	EXP 	slider_1: markerPos = 5.0
+14.7505 	EXP 	slider_1: rating = 5
+14.7505 	EXP 	IntroText_2: autoDraw = True
+14.7505 	EXP 	slider_1: autoDraw = True
+14.7505 	EXP 	IntroText_3: autoDraw = True
+14.7505 	EXP 	YouReceiveText: autoDraw = True
+14.7505 	EXP 	OtherReceiveText: autoDraw = True
+14.7505 	EXP 	YouDistribution: autoDraw = True
+14.7505 	EXP 	OtherDistribution: autoDraw = True
+14.7505 	EXP 	TaskOutline: autoDraw = True
+14.7505 	EXP 	You_Amount_Text: autoDraw = True
+14.7505 	EXP 	Other_Amount_Text: autoDraw = True
+15.7301 	DATA 	Keypress: space
+15.7498 	EXP 	Imported SVO_Trials.csv as conditions, 6 conditions, 18 params
+15.7503 	EXP 	Created sequence: sequential, trialTypes=6, nReps=1, seed=None
+15.7509 	EXP 	New trial (rep=0, index=0): OrderedDict([('YouReceiveText_1', 85), ('YouReceiveText_2', 85), ('YouReceiveText_3', 85), ('YouReceiveText_4', 85), ('YouReceiveText_5', 85), ('YouReceiveText_6', 85), ('YouReceiveText_7', 85), ('YouReceiveText_8', 85), ('YouReceiveText_9', 85), ('OtherReceiveText_1', 85), ('OtherReceiveText_2', 76), ('OtherReceiveText_3', 68), ('OtherReceiveText_4', 59), ('OtherReceiveText_5', 50), ('OtherReceiveText_6', 41), ('OtherReceiveText_7', 33), ('OtherReceiveText_8', 24), ('OtherReceiveText_9', 15)])
+15.7606 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+15.7640 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+15.7673 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+15.7704 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+15.7737 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+15.7774 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+15.7809 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+15.7841 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+15.8964 	EXP 	IntroText_2: autoDraw = False
+15.8964 	EXP 	slider_1: autoDraw = False
+15.8964 	EXP 	IntroText_3: autoDraw = False
+15.8964 	EXP 	YouReceiveText: autoDraw = False
+15.8964 	EXP 	OtherReceiveText: autoDraw = False
+15.8964 	EXP 	YouDistribution: autoDraw = False
+15.8964 	EXP 	OtherDistribution: autoDraw = False
+15.8964 	EXP 	TaskOutline: autoDraw = False
+15.8964 	EXP 	You_Amount_Text: autoDraw = False
+15.8964 	EXP 	Other_Amount_Text: autoDraw = False
+15.8964 	EXP 	unnamed Line: autoDraw = False
+15.8964 	EXP 	unnamed Line: autoDraw = False
+15.8964 	EXP 	unnamed Line: autoDraw = False
+15.8964 	EXP 	unnamed Line: autoDraw = False
+15.8964 	EXP 	unnamed Line: autoDraw = False
+15.8964 	EXP 	unnamed Line: autoDraw = False
+15.8964 	EXP 	unnamed Line: autoDraw = False
+15.8964 	EXP 	unnamed Line: autoDraw = False
+15.8964 	EXP 	slider_2: markerPos = 5
+15.8964 	EXP 	slider_2: markerPos = 5.0
+15.8964 	EXP 	slider_2: rating = 5
+15.8964 	EXP 	slider_2: autoDraw = True
+15.8964 	EXP 	YouAmountTextTrial: text = '85'
+15.8964 	EXP 	OtherAmountTextTrial: text = '50'
+15.8964 	EXP 	TrialOutline: autoDraw = True
+15.8964 	EXP 	YouReceiveTextTrial: autoDraw = True
+15.8964 	EXP 	OtherReceiveTextTrial: autoDraw = True
+15.8964 	EXP 	YouAmountTextTrial: autoDraw = True
+15.8964 	EXP 	OtherAmountTextTrial: autoDraw = True
+15.8964 	EXP 	YouDistributionTrial: autoDraw = True
+15.8964 	EXP 	OtherDistributionTrial: autoDraw = True
+15.8964 	EXP 	space_trial_text: autoDraw = True
+15.8964 	EXP 	text: autoDraw = True
+15.9633 	EXP 	YouAmountTextTrial: text = '85'
+15.9633 	EXP 	OtherAmountTextTrial: text = '50'
+16.0367 	EXP 	YouAmountTextTrial: text = '85'
+16.0367 	EXP 	OtherAmountTextTrial: text = '50'
+16.1098 	EXP 	YouAmountTextTrial: text = '85'
+16.1098 	EXP 	OtherAmountTextTrial: text = '50'
+16.1892 	EXP 	YouAmountTextTrial: text = '85'
+16.1892 	EXP 	OtherAmountTextTrial: text = '50'
+16.2687 	EXP 	YouAmountTextTrial: text = '85'
+16.2687 	EXP 	OtherAmountTextTrial: text = '50'
+16.3722 	EXP 	YouAmountTextTrial: text = '85'
+16.3722 	EXP 	OtherAmountTextTrial: text = '50'
+16.4697 	EXP 	YouAmountTextTrial: text = '85'
+16.4697 	EXP 	OtherAmountTextTrial: text = '50'
+16.5546 	EXP 	YouAmountTextTrial: text = '85'
+16.5546 	EXP 	OtherAmountTextTrial: text = '50'
+16.6277 	EXP 	YouAmountTextTrial: text = '85'
+16.6277 	EXP 	OtherAmountTextTrial: text = '50'
+16.7069 	EXP 	YouAmountTextTrial: text = '85'
+16.7069 	EXP 	OtherAmountTextTrial: text = '50'
+16.7744 	DATA 	Mouse: Left button down, pos=(547,538)
+16.7806 	EXP 	YouAmountTextTrial: text = '85'
+16.7806 	EXP 	OtherAmountTextTrial: text = '50'
+16.8562 	DATA 	Mouse:  Left button up, pos=(547,538)
+16.8593 	EXP 	YouAmountTextTrial: text = '85'
+16.8593 	EXP 	OtherAmountTextTrial: text = '50'
+16.8593 	EXP 	slider_2: markerPos = 1.9407408237457275
+16.9329 	EXP 	YouAmountTextTrial: text = '85'
+16.9329 	EXP 	OtherAmountTextTrial: text = '50'
+16.9329 	EXP 	slider_2: markerPos = 2.0
+16.9329 	EXP 	slider_2: rating = 2.0
+17.0181 	EXP 	YouAmountTextTrial: text = '85'
+17.0181 	EXP 	OtherAmountTextTrial: text = '76'
+17.0915 	EXP 	YouAmountTextTrial: text = '85'
+17.0915 	EXP 	OtherAmountTextTrial: text = '76'
+17.1597 	DATA 	Keypress: space
+17.1642 	EXP 	YouAmountTextTrial: text = '85'
+17.1642 	EXP 	OtherAmountTextTrial: text = '76'
+17.1709 	EXP 	New trial (rep=0, index=1): OrderedDict([('YouReceiveText_1', 85), ('YouReceiveText_2', 87), ('YouReceiveText_3', 89), ('YouReceiveText_4', 91), ('YouReceiveText_5', 93), ('YouReceiveText_6', 94), ('YouReceiveText_7', 96), ('YouReceiveText_8', 98), ('YouReceiveText_9', 100), ('OtherReceiveText_1', 15), ('OtherReceiveText_2', 19), ('OtherReceiveText_3', 24), ('OtherReceiveText_4', 28), ('OtherReceiveText_5', 33), ('OtherReceiveText_6', 37), ('OtherReceiveText_7', 41), ('OtherReceiveText_8', 46), ('OtherReceiveText_9', 50)])
+17.1804 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.1839 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.1873 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.1909 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.1945 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.1977 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.2012 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.2050 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.3108 	EXP 	YouAmountTextTrial: text = '85'
+17.3108 	EXP 	OtherAmountTextTrial: text = '76'
+17.3108 	EXP 	slider_2: autoDraw = False
+17.3108 	EXP 	TrialOutline: autoDraw = False
+17.3108 	EXP 	YouReceiveTextTrial: autoDraw = False
+17.3108 	EXP 	OtherReceiveTextTrial: autoDraw = False
+17.3108 	EXP 	YouAmountTextTrial: autoDraw = False
+17.3108 	EXP 	OtherAmountTextTrial: autoDraw = False
+17.3108 	EXP 	YouDistributionTrial: autoDraw = False
+17.3108 	EXP 	OtherDistributionTrial: autoDraw = False
+17.3108 	EXP 	space_trial_text: autoDraw = False
+17.3108 	EXP 	text: autoDraw = False
+17.3108 	EXP 	unnamed Line: autoDraw = False
+17.3108 	EXP 	unnamed Line: autoDraw = False
+17.3108 	EXP 	unnamed Line: autoDraw = False
+17.3108 	EXP 	unnamed Line: autoDraw = False
+17.3108 	EXP 	unnamed Line: autoDraw = False
+17.3108 	EXP 	unnamed Line: autoDraw = False
+17.3108 	EXP 	unnamed Line: autoDraw = False
+17.3108 	EXP 	unnamed Line: autoDraw = False
+17.3108 	EXP 	slider_2: markerPos = 5
+17.3108 	EXP 	slider_2: markerPos = 5.0
+17.3108 	EXP 	slider_2: rating = 5
+17.3108 	EXP 	slider_2: autoDraw = True
+17.3108 	EXP 	YouAmountTextTrial: text = '93'
+17.3108 	EXP 	OtherAmountTextTrial: text = '33'
+17.3108 	EXP 	TrialOutline: autoDraw = True
+17.3108 	EXP 	YouReceiveTextTrial: autoDraw = True
+17.3108 	EXP 	OtherReceiveTextTrial: autoDraw = True
+17.3108 	EXP 	YouAmountTextTrial: autoDraw = True
+17.3108 	EXP 	OtherAmountTextTrial: autoDraw = True
+17.3108 	EXP 	YouDistributionTrial: autoDraw = True
+17.3108 	EXP 	OtherDistributionTrial: autoDraw = True
+17.3108 	EXP 	space_trial_text: autoDraw = True
+17.3108 	EXP 	text: autoDraw = True
+17.3837 	EXP 	YouAmountTextTrial: text = '93'
+17.3837 	EXP 	OtherAmountTextTrial: text = '33'
+17.4635 	EXP 	YouAmountTextTrial: text = '93'
+17.4635 	EXP 	OtherAmountTextTrial: text = '33'
+17.5362 	EXP 	YouAmountTextTrial: text = '93'
+17.5362 	EXP 	OtherAmountTextTrial: text = '33'
+17.6092 	EXP 	YouAmountTextTrial: text = '93'
+17.6092 	EXP 	OtherAmountTextTrial: text = '33'
+17.6738 	DATA 	Mouse: Left button down, pos=(743,561)
+17.6762 	EXP 	YouAmountTextTrial: text = '93'
+17.6762 	EXP 	OtherAmountTextTrial: text = '33'
+17.7436 	DATA 	Mouse:  Left button up, pos=(744,561)
+17.7497 	EXP 	YouAmountTextTrial: text = '93'
+17.7497 	EXP 	OtherAmountTextTrial: text = '33'
+17.7497 	EXP 	slider_2: markerPos = 3.399999976158142
+17.8224 	EXP 	YouAmountTextTrial: text = '93'
+17.8224 	EXP 	OtherAmountTextTrial: text = '33'
+17.8224 	EXP 	slider_2: markerPos = 3.5
+17.8224 	EXP 	slider_2: rating = 3.5
+17.9023 	EXP 	YouAmountTextTrial: text = '90'
+17.9023 	EXP 	OtherAmountTextTrial: text = '26'
+17.9760 	EXP 	YouAmountTextTrial: text = '90'
+17.9760 	EXP 	OtherAmountTextTrial: text = '26'
+18.0503 	DATA 	Keypress: space
+18.0542 	EXP 	YouAmountTextTrial: text = '90'
+18.0542 	EXP 	OtherAmountTextTrial: text = '26'
+18.0615 	EXP 	New trial (rep=0, index=2): OrderedDict([('YouReceiveText_1', 50), ('YouReceiveText_2', 54), ('YouReceiveText_3', 59), ('YouReceiveText_4', 63), ('YouReceiveText_5', 68), ('YouReceiveText_6', 72), ('YouReceiveText_7', 76), ('YouReceiveText_8', 81), ('YouReceiveText_9', 85), ('OtherReceiveText_1', 100), ('OtherReceiveText_2', 98), ('OtherReceiveText_3', 96), ('OtherReceiveText_4', 94), ('OtherReceiveText_5', 93), ('OtherReceiveText_6', 91), ('OtherReceiveText_7', 89), ('OtherReceiveText_8', 87), ('OtherReceiveText_9', 85)])
+18.0713 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.0763 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.0813 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.0862 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.0912 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.0949 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.0998 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.1057 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.2191 	EXP 	YouAmountTextTrial: text = '90'
+18.2191 	EXP 	OtherAmountTextTrial: text = '26'
+18.2191 	EXP 	slider_2: autoDraw = False
+18.2191 	EXP 	TrialOutline: autoDraw = False
+18.2191 	EXP 	YouReceiveTextTrial: autoDraw = False
+18.2191 	EXP 	OtherReceiveTextTrial: autoDraw = False
+18.2191 	EXP 	YouAmountTextTrial: autoDraw = False
+18.2191 	EXP 	OtherAmountTextTrial: autoDraw = False
+18.2191 	EXP 	YouDistributionTrial: autoDraw = False
+18.2191 	EXP 	OtherDistributionTrial: autoDraw = False
+18.2191 	EXP 	space_trial_text: autoDraw = False
+18.2191 	EXP 	text: autoDraw = False
+18.2191 	EXP 	unnamed Line: autoDraw = False
+18.2191 	EXP 	unnamed Line: autoDraw = False
+18.2191 	EXP 	unnamed Line: autoDraw = False
+18.2191 	EXP 	unnamed Line: autoDraw = False
+18.2191 	EXP 	unnamed Line: autoDraw = False
+18.2191 	EXP 	unnamed Line: autoDraw = False
+18.2191 	EXP 	unnamed Line: autoDraw = False
+18.2191 	EXP 	unnamed Line: autoDraw = False
+18.2191 	EXP 	slider_2: markerPos = 5
+18.2191 	EXP 	slider_2: markerPos = 5.0
+18.2191 	EXP 	slider_2: rating = 5
+18.2191 	EXP 	slider_2: autoDraw = True
+18.2191 	EXP 	YouAmountTextTrial: text = '68'
+18.2191 	EXP 	OtherAmountTextTrial: text = '93'
+18.2191 	EXP 	TrialOutline: autoDraw = True
+18.2191 	EXP 	YouReceiveTextTrial: autoDraw = True
+18.2191 	EXP 	OtherReceiveTextTrial: autoDraw = True
+18.2191 	EXP 	YouAmountTextTrial: autoDraw = True
+18.2191 	EXP 	OtherAmountTextTrial: autoDraw = True
+18.2191 	EXP 	YouDistributionTrial: autoDraw = True
+18.2191 	EXP 	OtherDistributionTrial: autoDraw = True
+18.2191 	EXP 	space_trial_text: autoDraw = True
+18.2191 	EXP 	text: autoDraw = True
+18.2923 	EXP 	YouAmountTextTrial: text = '68'
+18.2923 	EXP 	OtherAmountTextTrial: text = '93'
+18.3650 	EXP 	YouAmountTextTrial: text = '68'
+18.3650 	EXP 	OtherAmountTextTrial: text = '93'
+18.4384 	EXP 	YouAmountTextTrial: text = '68'
+18.4384 	EXP 	OtherAmountTextTrial: text = '93'
+18.5228 	DATA 	Mouse: Left button down, pos=(1143,542)
+18.5300 	EXP 	YouAmountTextTrial: text = '68'
+18.5300 	EXP 	OtherAmountTextTrial: text = '93'
+18.6022 	DATA 	Mouse:  Left button up, pos=(1144,542)
+18.6092 	EXP 	YouAmountTextTrial: text = '68'
+18.6092 	EXP 	OtherAmountTextTrial: text = '93'
+18.6092 	EXP 	slider_2: markerPos = 6.362962961196899
+18.6943 	EXP 	YouAmountTextTrial: text = '68'
+18.6943 	EXP 	OtherAmountTextTrial: text = '93'
+18.6943 	EXP 	slider_2: markerPos = 6.5
+18.6943 	EXP 	slider_2: rating = 6.5
+18.7735 	EXP 	YouAmountTextTrial: text = '74'
+18.7735 	EXP 	OtherAmountTextTrial: text = '90'
+18.8456 	DATA 	Keypress: space
+18.8530 	EXP 	YouAmountTextTrial: text = '74'
+18.8530 	EXP 	OtherAmountTextTrial: text = '90'
+18.8613 	EXP 	New trial (rep=0, index=3): OrderedDict([('YouReceiveText_1', 50), ('YouReceiveText_2', 54), ('YouReceiveText_3', 59), ('YouReceiveText_4', 63), ('YouReceiveText_5', 68), ('YouReceiveText_6', 72), ('YouReceiveText_7', 76), ('YouReceiveText_8', 81), ('YouReceiveText_9', 85), ('OtherReceiveText_1', 100), ('OtherReceiveText_2', 89), ('OtherReceiveText_3', 79), ('OtherReceiveText_4', 68), ('OtherReceiveText_5', 58), ('OtherReceiveText_6', 47), ('OtherReceiveText_7', 36), ('OtherReceiveText_8', 26), ('OtherReceiveText_9', 15)])
+18.8734 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.8772 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.8806 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.8838 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.8875 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.8912 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.8946 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.8980 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.9928 	EXP 	YouAmountTextTrial: text = '74'
+18.9928 	EXP 	OtherAmountTextTrial: text = '90'
+18.9928 	EXP 	slider_2: autoDraw = False
+18.9928 	EXP 	TrialOutline: autoDraw = False
+18.9928 	EXP 	YouReceiveTextTrial: autoDraw = False
+18.9928 	EXP 	OtherReceiveTextTrial: autoDraw = False
+18.9928 	EXP 	YouAmountTextTrial: autoDraw = False
+18.9928 	EXP 	OtherAmountTextTrial: autoDraw = False
+18.9928 	EXP 	YouDistributionTrial: autoDraw = False
+18.9928 	EXP 	OtherDistributionTrial: autoDraw = False
+18.9928 	EXP 	space_trial_text: autoDraw = False
+18.9928 	EXP 	text: autoDraw = False
+18.9928 	EXP 	unnamed Line: autoDraw = False
+18.9928 	EXP 	unnamed Line: autoDraw = False
+18.9928 	EXP 	unnamed Line: autoDraw = False
+18.9928 	EXP 	unnamed Line: autoDraw = False
+18.9928 	EXP 	unnamed Line: autoDraw = False
+18.9928 	EXP 	unnamed Line: autoDraw = False
+18.9928 	EXP 	unnamed Line: autoDraw = False
+18.9928 	EXP 	unnamed Line: autoDraw = False
+18.9928 	EXP 	slider_2: markerPos = 5
+18.9928 	EXP 	slider_2: markerPos = 5.0
+18.9928 	EXP 	slider_2: rating = 5
+18.9928 	EXP 	slider_2: autoDraw = True
+18.9928 	EXP 	YouAmountTextTrial: text = '68'
+18.9928 	EXP 	OtherAmountTextTrial: text = '58'
+18.9928 	EXP 	TrialOutline: autoDraw = True
+18.9928 	EXP 	YouReceiveTextTrial: autoDraw = True
+18.9928 	EXP 	OtherReceiveTextTrial: autoDraw = True
+18.9928 	EXP 	YouAmountTextTrial: autoDraw = True
+18.9928 	EXP 	OtherAmountTextTrial: autoDraw = True
+18.9928 	EXP 	YouDistributionTrial: autoDraw = True
+18.9928 	EXP 	OtherDistributionTrial: autoDraw = True
+18.9928 	EXP 	space_trial_text: autoDraw = True
+18.9928 	EXP 	text: autoDraw = True
+19.0661 	EXP 	YouAmountTextTrial: text = '68'
+19.0661 	EXP 	OtherAmountTextTrial: text = '58'
+19.1397 	EXP 	YouAmountTextTrial: text = '68'
+19.1397 	EXP 	OtherAmountTextTrial: text = '58'
+19.2033 	DATA 	Mouse: Left button down, pos=(1404,541)
+19.2062 	EXP 	YouAmountTextTrial: text = '68'
+19.2062 	EXP 	OtherAmountTextTrial: text = '58'
+19.2737 	DATA 	Mouse:  Left button up, pos=(1404,541)
+19.2793 	EXP 	YouAmountTextTrial: text = '68'
+19.2793 	EXP 	OtherAmountTextTrial: text = '58'
+19.2793 	EXP 	slider_2: markerPos = 8.288888931274414
+19.3650 	EXP 	YouAmountTextTrial: text = '68'
+19.3650 	EXP 	OtherAmountTextTrial: text = '58'
+19.3650 	EXP 	slider_2: markerPos = 8.5
+19.3650 	EXP 	slider_2: rating = 8.5
+19.4502 	EXP 	YouAmountTextTrial: text = '83'
+19.4502 	EXP 	OtherAmountTextTrial: text = '20.5'
+19.5209 	DATA 	Keypress: space
+19.5231 	EXP 	YouAmountTextTrial: text = '83'
+19.5231 	EXP 	OtherAmountTextTrial: text = '20.5'
+19.5301 	EXP 	New trial (rep=0, index=4): OrderedDict([('YouReceiveText_1', 100), ('YouReceiveText_2', 94), ('YouReceiveText_3', 88), ('YouReceiveText_4', 81), ('YouReceiveText_5', 75), ('YouReceiveText_6', 69), ('YouReceiveText_7', 63), ('YouReceiveText_8', 56), ('YouReceiveText_9', 50), ('OtherReceiveText_1', 50), ('OtherReceiveText_2', 56), ('OtherReceiveText_3', 63), ('OtherReceiveText_4', 69), ('OtherReceiveText_5', 75), ('OtherReceiveText_6', 81), ('OtherReceiveText_7', 88), ('OtherReceiveText_8', 94), ('OtherReceiveText_9', 100)])
+19.5423 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.5455 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.5492 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.5524 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.5557 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.5599 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.5632 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.5669 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+19.6700 	EXP 	YouAmountTextTrial: text = '83'
+19.6700 	EXP 	OtherAmountTextTrial: text = '20.5'
+19.6700 	EXP 	slider_2: autoDraw = False
+19.6700 	EXP 	TrialOutline: autoDraw = False
+19.6700 	EXP 	YouReceiveTextTrial: autoDraw = False
+19.6700 	EXP 	OtherReceiveTextTrial: autoDraw = False
+19.6700 	EXP 	YouAmountTextTrial: autoDraw = False
+19.6700 	EXP 	OtherAmountTextTrial: autoDraw = False
+19.6700 	EXP 	YouDistributionTrial: autoDraw = False
+19.6700 	EXP 	OtherDistributionTrial: autoDraw = False
+19.6700 	EXP 	space_trial_text: autoDraw = False
+19.6700 	EXP 	text: autoDraw = False
+19.6700 	EXP 	unnamed Line: autoDraw = False
+19.6700 	EXP 	unnamed Line: autoDraw = False
+19.6700 	EXP 	unnamed Line: autoDraw = False
+19.6700 	EXP 	unnamed Line: autoDraw = False
+19.6700 	EXP 	unnamed Line: autoDraw = False
+19.6700 	EXP 	unnamed Line: autoDraw = False
+19.6700 	EXP 	unnamed Line: autoDraw = False
+19.6700 	EXP 	unnamed Line: autoDraw = False
+19.6700 	EXP 	slider_2: markerPos = 5
+19.6700 	EXP 	slider_2: markerPos = 5.0
+19.6700 	EXP 	slider_2: rating = 5
+19.6700 	EXP 	slider_2: autoDraw = True
+19.6700 	EXP 	YouAmountTextTrial: text = '75'
+19.6700 	EXP 	OtherAmountTextTrial: text = '75'
+19.6700 	EXP 	TrialOutline: autoDraw = True
+19.6700 	EXP 	YouReceiveTextTrial: autoDraw = True
+19.6700 	EXP 	OtherReceiveTextTrial: autoDraw = True
+19.6700 	EXP 	YouAmountTextTrial: autoDraw = True
+19.6700 	EXP 	OtherAmountTextTrial: autoDraw = True
+19.6700 	EXP 	YouDistributionTrial: autoDraw = True
+19.6700 	EXP 	OtherDistributionTrial: autoDraw = True
+19.6700 	EXP 	space_trial_text: autoDraw = True
+19.6700 	EXP 	text: autoDraw = True
+19.7492 	EXP 	YouAmountTextTrial: text = '75'
+19.7492 	EXP 	OtherAmountTextTrial: text = '75'
+19.8218 	EXP 	YouAmountTextTrial: text = '75'
+19.8218 	EXP 	OtherAmountTextTrial: text = '75'
+19.8869 	DATA 	Mouse: Left button down, pos=(1505,548)
+19.8888 	EXP 	YouAmountTextTrial: text = '75'
+19.8888 	EXP 	OtherAmountTextTrial: text = '75'
+19.9621 	EXP 	YouAmountTextTrial: text = '75'
+19.9621 	EXP 	OtherAmountTextTrial: text = '75'
+19.9621 	EXP 	slider_2: markerPos = 9.037036895751953
+19.9713 	DATA 	Mouse:  Left button up, pos=(1505,548)
+20.0474 	EXP 	YouAmountTextTrial: text = '75'
+20.0474 	EXP 	OtherAmountTextTrial: text = '75'
+20.0474 	EXP 	slider_2: markerPos = 9.0
+20.0474 	EXP 	slider_2: rating = 9.0
+20.1206 	EXP 	YouAmountTextTrial: text = '50'
+20.1206 	EXP 	OtherAmountTextTrial: text = '100'
+20.1866 	DATA 	Keypress: space
+20.1937 	EXP 	YouAmountTextTrial: text = '50'
+20.1937 	EXP 	OtherAmountTextTrial: text = '100'
+20.2016 	EXP 	New trial (rep=0, index=5): OrderedDict([('YouReceiveText_1', 100), ('YouReceiveText_2', 98), ('YouReceiveText_3', 96), ('YouReceiveText_4', 94), ('YouReceiveText_5', 93), ('YouReceiveText_6', 91), ('YouReceiveText_7', 89), ('YouReceiveText_8', 87), ('YouReceiveText_9', 85), ('OtherReceiveText_1', 50), ('OtherReceiveText_2', 54), ('OtherReceiveText_3', 59), ('OtherReceiveText_4', 63), ('OtherReceiveText_5', 68), ('OtherReceiveText_6', 72), ('OtherReceiveText_7', 76), ('OtherReceiveText_8', 81), ('OtherReceiveText_9', 85)])
+20.2124 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+20.2158 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+20.2194 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+20.2247 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+20.2295 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+20.2344 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+20.2387 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+20.2434 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=True, autoLog=True, closeShape=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=6, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+20.3650 	EXP 	YouAmountTextTrial: text = '50'
+20.3650 	EXP 	OtherAmountTextTrial: text = '100'
+20.3650 	EXP 	slider_2: autoDraw = False
+20.3650 	EXP 	TrialOutline: autoDraw = False
+20.3650 	EXP 	YouReceiveTextTrial: autoDraw = False
+20.3650 	EXP 	OtherReceiveTextTrial: autoDraw = False
+20.3650 	EXP 	YouAmountTextTrial: autoDraw = False
+20.3650 	EXP 	OtherAmountTextTrial: autoDraw = False
+20.3650 	EXP 	YouDistributionTrial: autoDraw = False
+20.3650 	EXP 	OtherDistributionTrial: autoDraw = False
+20.3650 	EXP 	space_trial_text: autoDraw = False
+20.3650 	EXP 	text: autoDraw = False
+20.3650 	EXP 	unnamed Line: autoDraw = False
+20.3650 	EXP 	unnamed Line: autoDraw = False
+20.3650 	EXP 	unnamed Line: autoDraw = False
+20.3650 	EXP 	unnamed Line: autoDraw = False
+20.3650 	EXP 	unnamed Line: autoDraw = False
+20.3650 	EXP 	unnamed Line: autoDraw = False
+20.3650 	EXP 	unnamed Line: autoDraw = False
+20.3650 	EXP 	unnamed Line: autoDraw = False
+20.3650 	EXP 	slider_2: markerPos = 5
+20.3650 	EXP 	slider_2: markerPos = 5.0
+20.3650 	EXP 	slider_2: rating = 5
+20.3650 	EXP 	slider_2: autoDraw = True
+20.3650 	EXP 	YouAmountTextTrial: text = '93'
+20.3650 	EXP 	OtherAmountTextTrial: text = '68'
+20.3650 	EXP 	TrialOutline: autoDraw = True
+20.3650 	EXP 	YouReceiveTextTrial: autoDraw = True
+20.3650 	EXP 	OtherReceiveTextTrial: autoDraw = True
+20.3650 	EXP 	YouAmountTextTrial: autoDraw = True
+20.3650 	EXP 	OtherAmountTextTrial: autoDraw = True
+20.3650 	EXP 	YouDistributionTrial: autoDraw = True
+20.3650 	EXP 	OtherDistributionTrial: autoDraw = True
+20.3650 	EXP 	space_trial_text: autoDraw = True
+20.3650 	EXP 	text: autoDraw = True
+20.4625 	EXP 	YouAmountTextTrial: text = '93'
+20.4625 	EXP 	OtherAmountTextTrial: text = '68'
+20.5415 	EXP 	YouAmountTextTrial: text = '93'
+20.5415 	EXP 	OtherAmountTextTrial: text = '68'
+20.6205 	EXP 	YouAmountTextTrial: text = '93'
+20.6205 	EXP 	OtherAmountTextTrial: text = '68'
+20.6999 	EXP 	YouAmountTextTrial: text = '93'
+20.6999 	EXP 	OtherAmountTextTrial: text = '68'
+20.7727 	EXP 	YouAmountTextTrial: text = '93'
+20.7727 	EXP 	OtherAmountTextTrial: text = '68'
+20.8371 	DATA 	Mouse: Left button down, pos=(1078,544)
+20.8398 	EXP 	YouAmountTextTrial: text = '93'
+20.8398 	EXP 	OtherAmountTextTrial: text = '68'
+20.9136 	DATA 	Mouse:  Left button up, pos=(1078,544)
+20.9193 	EXP 	YouAmountTextTrial: text = '93'
+20.9193 	EXP 	OtherAmountTextTrial: text = '68'
+20.9193 	EXP 	slider_2: markerPos = 5.874074101448059
+21.0048 	EXP 	YouAmountTextTrial: text = '93'
+21.0048 	EXP 	OtherAmountTextTrial: text = '68'
+21.0048 	EXP 	slider_2: markerPos = 6.0
+21.0048 	EXP 	slider_2: rating = 6.0
+21.0914 	DATA 	Keypress: space
+21.0961 	EXP 	YouAmountTextTrial: text = '91'
+21.0961 	EXP 	OtherAmountTextTrial: text = '72'
+21.1150 	EXP 	YouAmountTextTrial: text = '91'
+21.1150 	EXP 	OtherAmountTextTrial: text = '72'
+21.1150 	EXP 	slider_2: autoDraw = False
+21.1150 	EXP 	TrialOutline: autoDraw = False
+21.1150 	EXP 	YouReceiveTextTrial: autoDraw = False
+21.1150 	EXP 	OtherReceiveTextTrial: autoDraw = False
+21.1150 	EXP 	YouAmountTextTrial: autoDraw = False
+21.1150 	EXP 	OtherAmountTextTrial: autoDraw = False
+21.1150 	EXP 	YouDistributionTrial: autoDraw = False
+21.1150 	EXP 	OtherDistributionTrial: autoDraw = False
+21.1150 	EXP 	space_trial_text: autoDraw = False
+21.1150 	EXP 	text: autoDraw = False
+21.1150 	EXP 	unnamed Line: autoDraw = False
+21.1150 	EXP 	unnamed Line: autoDraw = False
+21.1150 	EXP 	unnamed Line: autoDraw = False
+21.1150 	EXP 	unnamed Line: autoDraw = False
+21.1150 	EXP 	unnamed Line: autoDraw = False
+21.1150 	EXP 	unnamed Line: autoDraw = False
+21.1150 	EXP 	unnamed Line: autoDraw = False
+21.1150 	EXP 	unnamed Line: autoDraw = False
+21.1150 	EXP 	end_text: autoDraw = True
+23.1197 	DATA 	Keypress: space
+23.1327 	EXP 	end_text: autoDraw = False
+23.1717 	EXP 	window1: mouseVisible = True

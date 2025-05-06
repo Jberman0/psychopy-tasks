@@ -12,7 +12,7 @@ if not info.OK:  # User clicked cancel
 pOrder = info.data[0]  # Get participant ID
 
 # Initialize window (now uses full screen dimensions)
-win = visual.Window(fullscr = True, color='black', units='pix')
+win = visual.Window(size = [1920, 1080], color='black', units='pix')
 win_width, win_height = win.size  # Get actual display dimensions
 
 # Shortcut to quit in fullscreen
@@ -232,6 +232,7 @@ def run_trial():
     else:
         if not isPract_ds and consec_error_score < params['minSetSize']:
             consec_error_score = params['minSetSize'] - 1
+            nError = 0
         params['minSetSize'] = max(3, params['minSetSize'] - 1)
     
     # Save trial data
