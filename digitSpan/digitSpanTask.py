@@ -1,15 +1,21 @@
 from psychopy import visual, core, event, gui, data
 import random, csv, time, os
+from datetime import datetime
+import pytz
+import shutil
 
 # Participant info dialog
 info = gui.Dlg(title="Digit Span Task")
-info.addField("pOrder")
+info.addField("participantID")
 info.show()
 
 if not info.OK:  # User clicked cancel
     core.quit()
+
+working_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(working_dir)
     
-pOrder = info.data[0]  # Get participant ID
+participantID = info.data[0]  # Get participant ID
 
 # Initialize window (now uses full screen dimensions)
 win = visual.Window(size = [1920, 1080], color='black', units='pix')
@@ -43,7 +49,7 @@ params = {
 
 # Data structure
 data_dict = {
-    "pOrder": pOrder,
+    "participantID": participantID,
     "instruction": {"rt_1": None, "rt_2": None},
     "practice": {"trials": []},
     "task": {"trials": []},
@@ -303,19 +309,21 @@ data_dict["summary"] = {
 
 # Save data 
 data_folder = 'data'
+tz = pytz.timezone("US/Eastern")
+date = datetime.now(tz).strftime("%m-%d-%Y")
 
 if not os.path.exists(data_folder):
     os.makedirs(data_folder)
 
-filename = os.path.join(data_folder, f'{pOrder}_digit_span.csv')
-fieldnames = ['pOrder', 'rt_1', 'rt_2', 'trial_type', 'trial_num', 'digits', 'response', 'accuracy', 'rt', 'digit_count', 'max_digit', 'max_before_error']
+filename = os.path.join(data_folder, f'{participantID}_digit_span_{date}.csv')
+fieldnames = ['participantID', 'rt_1', 'rt_2', 'trial_type', 'trial_num', 'digits', 'response', 'accuracy', 'rt', 'digit_count', 'max_digit', 'max_before_error']
 
 # Create a list to hold all flattened data rows
 all_rows = []
 
 # Add instruction times as first row with metadata
 instruction_row = {
-    'pOrder': pOrder,
+    'participantID': participantID,
     'rt_1': data_dict["instruction"]["rt_1"],
     'rt_2': data_dict["instruction"]["rt_2"],
     'trial_type': 'instruction',
@@ -333,7 +341,7 @@ all_rows.append(instruction_row)
 # Add practice trials
 for trial in data_dict["practice"]["trials"]:
     trial_row = {
-        'pOrder': pOrder,
+        'participantID': participantID,
         'rt_1': '',
         'rt_2': '',
         'trial_type': 'practice',
@@ -351,7 +359,7 @@ for trial in data_dict["practice"]["trials"]:
 # Add task trials
 for trial in data_dict["task"]["trials"]:
     trial_row = {
-        'pOrder': pOrder,
+        'participantID': participantID,
         'rt_1': '',
         'rt_2': '',
         'trial_type': 'task',
@@ -385,6 +393,15 @@ summary_text.text = (
 summary_text.draw()
 win.flip()
 core.wait(3.0)
+
+try:
+    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\digit_span"
+    src_path = filename
+    dst_path = os.path.join(box_path, os.path.basename(filename))
+    shutil.copy2(src_path, dst_path)
+
+except Exception as e:
+    print(f"Error saving to Box: {e}")
 
 win.close()
 core.quit()
