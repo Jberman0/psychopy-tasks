@@ -4,18 +4,42 @@ from datetime import datetime
 import pytz
 import shutil
 
-# Participant info dialog
-info = gui.Dlg(title="Digit Span Task")
-info.addField("participantID")
-info.show()
+# Ensure that relative paths start from the same directory as this script
+_thisDir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(_thisDir)
 
-if not info.OK:  # User clicked cancel
-    core.quit()
+def create_participant_folder():
+    while True:
+        global participantID
+        # Participant info dialog
+        info = gui.Dlg(title="Digit Span Task")
+        info.addField("participantID")
+        info.show()
+        if not info.OK:  # User clicked cancel
+            core.quit()
+        participantID = info.data[0]
 
-working_dir = os.path.dirname(os.path.abspath(__file__))
-os.chdir(working_dir)
+        if participantID is not None:
+            break
+        else:
+            raise ValueError("Input cancelled")
+        
+    date_str = datetime.now().strftime('%m-%d-%Y')
+    base_path = r"C:\Users\sldlab\Box\box-group-sldlab\slb\fMRI\post_scan\digit_span"
+    folder_name = f"{participantID}_{date_str}"
+    new_folder_path = os.path.join(base_path, folder_name)
+
+    try:
+        os.makedirs(new_folder_path)
+        print(f"New folder path: {new_folder_path} with participantID: {participantID}")
+    except Exception as e:
+        print(f"Error creating folder: {e}")
+        return None
     
-participantID = info.data[0]  # Get participant ID
+    return new_folder_path
+
+# Custom folder for data output
+custom_data_folder = create_participant_folder()  # replace with your folder name or path
 
 # Initialize window (now uses full screen dimensions)
 win = visual.Window(size = [1920, 1080], color='black', units='pix')
@@ -394,14 +418,23 @@ summary_text.draw()
 win.flip()
 core.wait(3.0)
 
+# Save to Box
 try:
-    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\digit_span"
-    src_path = filename
-    dst_path = os.path.join(box_path, os.path.basename(filename))
-    shutil.copy2(src_path, dst_path)
-
+    box_path = r"C:\Users\jberm\Box\box-group-sldlab\slb\fMRI\post_scan\digit_span"
+    svo_data_folder = custom_data_folder
+    total_files = 0
+    success_count = 0
+    for item in os.listdir(svo_data_folder):
+        total_files += 1
+        src_path = os.path.join(svo_data_folder, item)
+        dst_path = os.path.join(box_path, item)
+        if os.path.isfile(src_path):
+            shutil.copy2(src_path, dst_path)
+            success_count += 1
+    print(f"Uplaoded {success_count} / {total_files} to Box")
 except Exception as e:
-    print(f"Error saving to Box: {e}")
+    print(f"Error: {e}")
+    print(box_path, _thisDir)
 
 win.close()
 core.quit()

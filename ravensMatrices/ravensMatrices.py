@@ -25,6 +25,8 @@ from numpy import (sin, cos, tan, log, log10, pi, average,
 from numpy.random import random, randint, normal, shuffle, choice as randchoice
 import os  # handy system and path functions
 import shutil
+from tkinter import simpledialog, messagebox
+from datetime import datetime
 
 from psychopy.hardware import keyboard
 
@@ -36,17 +38,48 @@ os.chdir(_thisDir)
 
 # Store info about the experiment session
 psychopyVersion = '2021.2.3'
-expName = 'ravensMatricesBuilder'  # from the Builder filename that created this script
+expName = 'ravens_matrices'  # from the Builder filename that created this script
 expInfo = {'participantID': ''}
-dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
-if dlg.OK == False:
-    core.quit()  # user pressed cancel
+
+def create_participant_folder():
+    while True:
+        global participantID
+        participantID = simpledialog.askstring("Participant ID", "Enter participantID:")
+        if participantID is not None:
+            break
+        else:
+            raise ValueError("Input cancelled")
+        
+    date_str = datetime.now().strftime('%m-%d-%Y')
+    base_path = r"C:\Users\sldlab\Box\box-group-sldlab\slb\fMRI\post_scan\ravens_matrices"
+    folder_name = f"{participantID}_{date_str}"
+    new_folder_path = os.path.join(base_path, folder_name)
+
+    try:
+        os.makedirs(new_folder_path)
+        print(f"New folder path: {new_folder_path} with participantID: {participantID}")
+    except Exception as e:
+        print(f"Error creating folder: {e}")
+        return None
+    
+    return new_folder_path
+
+if participantID is not None:
+    expInfo['participantID'] = participantID # set participantID if found in Box
+else:
+    dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName) # set participantID if not found in Box
+    if dlg.OK == False:
+        core.quit()  # user pressed cancel
+
+# Custom folder for data output
+custom_data_folder = create_participant_folder()  # replace with your folder name or path
+
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 
-# Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participantID'], expName, expInfo['date'])
+# Modify the default data file path
+filename = os.path.join(custom_data_folder, f"{expInfo['participantID']}_{expName}_{expInfo['date']}")
 
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
@@ -778,13 +811,21 @@ logging.flush()
 
 # Save to Box
 try:
-    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\ravens_matrices"
-    src_path = filename
-    dst_path = os.path.join(box_path, os.path.basename(filename))
-    shutil.copy2(src_path, dst_path)
-
+    box_path = r"C:\Users\jberm\Box\box-group-sldlab\slb\fMRI\post_scan\ravens_matrices"
+    svo_data_folder = custom_data_folder
+    total_files = 0
+    success_count = 0
+    for item in os.listdir(svo_data_folder):
+        total_files += 1
+        src_path = os.path.join(svo_data_folder, item)
+        dst_path = os.path.join(box_path, item)
+        if os.path.isfile(src_path):
+            shutil.copy2(src_path, dst_path)
+            success_count += 1
+    print(f"Uplaoded {success_count} / {total_files} to Box")
 except Exception as e:
-    print(f"Error saving to Box: {e}")
+    print(f"Error: {e}")
+    print(box_path, _thisDir)
 
 # make sure everything is closed down
 thisExp.abort()  # or data files will save again on exit
