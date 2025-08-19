@@ -778,7 +778,7 @@ logging.flush()
 
 # Save to Box
 try:
-    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\digit_span"
+    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\ravens_matrices"
     src_path = filename
     dst_path = os.path.join(box_path, os.path.basename(filename))
     shutil.copy2(src_path, dst_path)

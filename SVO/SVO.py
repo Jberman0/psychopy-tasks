@@ -23,7 +23,7 @@ import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
 from numpy.random import random, randint, normal, shuffle, choice as randchoice
-import os  # handy system and path functions
+import os  
 import shutil
 
 from psychopy.hardware import keyboard
@@ -1916,7 +1916,7 @@ logging.flush()
 
 # Save to Box
 try:
-    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\digit_span"
+    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\svo"
     src_path = filename
     dst_path = os.path.join(box_path, os.path.basename(filename))
     shutil.copy2(src_path, dst_path)
