@@ -24,7 +24,7 @@ from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
 from numpy.random import random, randint, normal, shuffle, choice as randchoice
 import os  # handy system and path functions
-import sys  # to get file system encoding
+import shutil
 
 from psychopy.hardware import keyboard
 
@@ -37,7 +37,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2021.2.3'
 expName = 'ravensMatricesBuilder'  # from the Builder filename that created this script
-expInfo = {'pOrder': ''}
+expInfo = {'participantID': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -46,7 +46,7 @@ expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['pOrder'], expName, expInfo['date'])
+filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participantID'], expName, expInfo['date'])
 
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
@@ -758,6 +758,7 @@ thisExp.addData('rpm_raw', rpm_raw)
 thisExp.addData('rpm_err', rpm_err)
 thisExp.addData('rpm_adj', rpm_adj)
 thisExp.addData('rpm_rt', rpm_rt)
+
 '''
 # Print results to output for verification
 print(f"RPM Raw Score: {rpm_raw}")
@@ -774,6 +775,17 @@ win.flip()
 thisExp.saveAsWideText(filename+'.csv', delim='auto')
 thisExp.saveAsPickle(filename)
 logging.flush()
+
+# Save to Box
+try:
+    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\digit_span"
+    src_path = filename
+    dst_path = os.path.join(box_path, os.path.basename(filename))
+    shutil.copy2(src_path, dst_path)
+
+except Exception as e:
+    print(f"Error saving to Box: {e}")
+
 # make sure everything is closed down
 thisExp.abort()  # or data files will save again on exit
 win.close()
