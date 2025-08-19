@@ -50,6 +50,7 @@ def create_participant_folder():
         
     date_str = datetime.now().strftime('%m-%d-%Y')
     base_path = r"C:\Users\sldlab\Box\box-group-sldlab\slb\fMRI\post_scan\11-20"
+    global folder_name
     folder_name = f"{participantID}_{date_str}"
     new_folder_path = os.path.join(base_path, folder_name)
 
@@ -427,13 +428,16 @@ logging.flush()
 # Save to Box
 try:
     box_path = r"C:\Users\jberm\Box\box-group-sldlab\slb\fMRI\post_scan\11-20"
+    box_folder_path = os.path.join(box_path, folder_name)
+    os.makedirs(box_folder_path) # Folder per particiant in Box
     svo_data_folder = custom_data_folder
+
     total_files = 0
     success_count = 0
     for item in os.listdir(svo_data_folder):
         total_files += 1
         src_path = os.path.join(svo_data_folder, item)
-        dst_path = os.path.join(box_path, item)
+        dst_path = os.path.join(box_folder_path, item)
         if os.path.isfile(src_path):
             shutil.copy2(src_path, dst_path)
             success_count += 1
