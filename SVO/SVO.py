@@ -27,6 +27,7 @@ import os
 import shutil
 from tkinter import simpledialog, messagebox
 from datetime import datetime
+import pandas as pd
 
 from psychopy.hardware import keyboard
 
@@ -51,7 +52,11 @@ def create_participant_folder():
             raise ValueError("Input cancelled")
         
     date_str = datetime.now().strftime('%m-%d-%Y')
-    base_path = r"C:\Users\sldlab\Box\box-group-sldlab\slb\fMRI\post_scan\svo"
+    base_path = "data" # local path
+
+    # make sure data folder exist
+    os.makedirs(base_path, exist_ok=True)
+
     global folder_name
     folder_name = f"{participantID}_{date_str}"
     new_folder_path = os.path.join(base_path, folder_name)
@@ -65,10 +70,75 @@ def create_participant_folder():
     
     return new_folder_path
 
+def merge_participant_data(folder_name, output_file):
+    """
+    Merge all game CSVs for a participant into a master CSV.
+    Only runs if all participantID_date folders exist.
+    """
+
+    # Function to clean duplicate column names like 'date.1', 'date.2' → 'date'
+    def clean_columns(df):
+        df.columns = df.columns.str.split('.').str[0]
+        return df
+
+    game_folders = { 
+        "digit_span": r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\digit_span", 
+        "ravens_matrices": r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\ravens_matrices", 
+        "svo": r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\svo", 
+        "11-20": r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\11-20"
+    }
+    
+    # Path to the master merged CSV (always used for read/write)
+    merged_path = rf"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\data\preprocessed\group_level\{output_file}"
+
+    # Check all participant folders exist
+    participant_folders = {}
+    for game, folder in game_folders.items():
+        participant_folder = os.path.join(folder, folder_name)
+        if not os.path.exists(participant_folder):
+            print(f"Not all games completed yet — missing {game} folder.")
+            return  # stop here
+        participant_folders[game] = participant_folder
+
+    # Load CSVs from each folder
+    dfs = []
+    for game, folder in participant_folders.items():
+        csv_files = [f for f in os.listdir(folder) if f.endswith(".csv")]
+        if not csv_files:
+            print(f"No CSV found for {game} in {folder}")
+            return
+        # pick the first CSV
+        csv_path = os.path.join(folder, csv_files[0])  
+        print(f"Loading {csv_path}")
+        dfs.append(pd.read_csv(csv_path))
+
+    # Pad to same number of rows
+    max_rows = max(len(df) for df in dfs)
+    dfs_extended = [df.reindex(range(max_rows)) for df in dfs]
+
+    # Merge horizontally
+    merged_df = pd.concat(dfs_extended, axis=1)
+    merged_df = clean_columns(merged_df)
+    print(f"merged_df shape: {merged_df.shape}")
+
+    # Append to master CSV
+    if os.path.exists(merged_path):
+        existing_df = pd.read_csv(merged_path)
+        existing_df = clean_columns(existing_df)
+        print(f"existing_df shape: {existing_df.shape}")
+
+        final_df = pd.concat([existing_df, merged_df], axis=0, ignore_index=True, sort=False)
+        final_df = clean_columns(final_df)
+        final_df.to_csv(merged_path, index=False)
+        print(f"done (appended to existing master: {merged_path})")
+    else:
+        merged_df.to_csv(merged_path, index=False)
+        print(f"done (new master created: {merged_path})")
+
 if participantID is not None:
-    expInfo['participantID'] = participantID # set participantID if found in Box
+    expInfo['participantID'] = participantID # set participantID if found
 else:
-    dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName) # set participantID if not found in Box
+    dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName) # set participantID if not found
     if dlg.OK == False:
         core.quit()  # user pressed cancel
 
@@ -1951,7 +2021,7 @@ logging.flush()
 
 # Save to Box
 try:
-    box_path = r"C:\Users\jberm\Box\box-group-sldlab\slb\fMRI\post_scan\svo"
+    box_path = r"C:\Users\Josh\Box\box-group-sldlab\slb\fMRI\post_scan\svo"
     box_folder_path = os.path.join(box_path, folder_name)
     os.makedirs(box_folder_path) # Folder per particiant in Box
     svo_data_folder = custom_data_folder
@@ -1970,6 +2040,8 @@ except Exception as e:
     print(f"Error: {e}")
     print(box_path, _thisDir)
     
+merge_participant_data(folder_name, output_file="post_scan_merged.csv")
+
 # make sure everything is closed down
 thisExp.abort()  # or data files will save again on exit
 win.close()
